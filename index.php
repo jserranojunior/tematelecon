@@ -4,62 +4,45 @@ include('header.php');
 
                     $exame_img = get_theme_mod( 'image_exame' ); 
                    
-
-
 ?>   
     <div class="row row-empresa">
-    <session id="empresa">
-        <div class="area-empresa text-center">
-            <h3 class="titulo-empresa"><?php echo get_theme_mod( 'empresa_titulo' ); ?></h3>
-            
-            <div class="col-md-10 col-md-offset-1 texto-empresa">
-                <p class="texto-empresa"><?php echo get_theme_mod( 'empresa_texto' ); ?></p>
+        <session id="empresa">
+            <div class="area-empresa text-center">
+                <h3 class="titulo-empresa"><?php echo get_theme_mod( 'empresa_titulo' ); ?></h3>
+                
+                <div class="col-md-10 col-md-offset-1 texto-empresa">
+                    <p class="texto-empresa"><?php echo get_theme_mod( 'empresa_texto' ); ?></p>
+                </div>
             </div>
-    </div>
-     
-
-    </session>
+        </session>
     </div>
 
-
-
-
-
-    <div class="row row-cursos">
+<div class="row row-cursos">
     <session id="cursos">
-            
-            
             <div class="area-cursos text-center">
-
             <h3 class="titulo-cursos"><?php echo get_theme_mod( 'curso_titulo' ); ?></h3>
-           
-        
-            <p><?php echo get_theme_mod( 'curso_texto' );?></p>
-           
-<div class="paineis-cursos">
-    <?php for($count_painel = 1; $count_painel < 4 ; $count_painel++){?>
-            <div class="col-md-4">
-                <div class="painel-curso <?php if($count_painel == 2){ echo "painel-color-green";} else{echo "painel-color";}?>">
-
-                <h4 class="titulo-curso"><?php echo get_theme_mod('painel_titulo'.$count_painel); ?></h4>
-                <div class="risco-curso"></div>
-                <p class="texto-curso"><?php echo get_theme_mod('painel_texto'.$count_painel); ?></p>
-
-            <div class="btn"><?php echo get_theme_mod('painel_btn'.$count_painel); ?></div>
-             </div>
+            <p><?php echo get_theme_mod( 'curso_texto' );?></p>           
+        <div class="paineis-cursos">
+                <?php for($count_painel = 1; $count_painel < 4 ; $count_painel++){?>
+                            <div class="col-md-4">
+                                <div class="painel-curso 
+                                    <?php if($count_painel == 2){ echo "painel-color-green";} else{echo "painel-color";}?>">
+                                    <h4 class="titulo-curso"><?php echo get_theme_mod('painel_titulo'.$count_painel); ?></h4>
+                                    <div class="risco-curso"></div>
+                                    <p class="texto-curso"><?php echo get_theme_mod('painel_texto'.$count_painel); ?></p>
+                                    <div class="btn"><?php echo get_theme_mod('painel_btn'.$count_painel); ?></div>
+                                </div>
+                            </div>
+                <?php } ?>
             </div>
-   <?php } ?>
-            </div>
-     </div> 
-
+        </div> 
      </session>
-    </div>
+</div>
 
 <?php
 
 $exame_img = esc_url($exame_img);
  $exame_img_back =  "style='background-image: url('$exame_img');'"; 
-
 
  ?>
 
