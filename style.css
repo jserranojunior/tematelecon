@@ -1,0 +1,829 @@
+/*
+Theme Name: Telecon
+Theme URI: 
+Author:
+Author URI: 
+Description: 
+Version: 1.0
+License: 
+License URI: 
+Tags: tags
+Text Domain: 
+ 
+*/
+
+/* GERAL*/
+
+
+
+@font-face {
+ font-family: 'bebas';
+font-style: normal;
+font-weight: normal;
+src: local('bebas'), url('./fonts/bebas.woff') format('woff');
+}
+
+@font-face {
+ font-family: 'bebasregular';
+font-style: normal;
+font-weight: normal;
+src: local('bebasregular'), url('./fonts/bebasregular.woff') format('woff');
+}
+
+
+body{
+    color: rgba(148, 148, 148, 1);
+}
+
+body,p,h1,h2,h5,h6,.btn,.text-right,.texto-slide,.textos-exames,.texto-empresa,.p-iten,a,label,.item-texto,.texto-exame,.titulo-laudo,.titulo-exame,.titulo-painel-laudo{
+    font-family: bebas! important;
+}
+
+h3,h4,.titulo,.texto-curso,.texto-painel-laudo{
+     font-family: bebasregular! important;
+}
+
+
+a{
+    color:#fff;
+}
+
+.titulo{
+     padding-top: 26px;
+}
+
+.btn-transparent {
+    background-color: rgba(255, 255, 255, 0)! important;
+    border: 1px solid #fff! important;
+    color: #fff !important;
+}
+
+.text-right{
+    text-align: right
+}
+
+.btn {
+    font-weight: bold;
+    border-radius: 0px !important;
+    border: 0px;
+    padding: 2% 10%;
+    font-size: 22px;
+}
+
+
+.btn-primary{
+    background-color:#3e4e5b;
+}
+
+label{
+    margin-bottom:0px! important;
+}
+
+
+.form-control{
+     background-color: rgba(255, 255, 255, 0)! important;
+    border: 1px solid #485057;
+    border-radius:0px;
+}
+
+ .form-transparent {
+      border: 1px solid rgba(204, 204, 204, 0)! important;
+    }
+
+
+.form-control:focus {
+    border-color: #485057; !important;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 8px rgba(255, 255, 255, 0);
+    box-shadow: inset 0px 1px 1px rgba(255,255,255,0), 0px 0px 8px rgba(255,255,255,0);
+}
+
+
+
+
+
+/* MENU */
+
+img.logo-telecon{
+         margin: 0 auto;
+}
+
+.div-logo {
+    width: 300px;
+    margin-top: 4px;
+    min-width: 190px;
+}
+
+
+.navbar{
+    float: right! important;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #585858;
+    color: #fff;
+}
+
+.navbar-toggle{
+    margin-right: 0px;
+}
+
+ .in{
+     text-align:center;
+     margin: 0 40% auto;
+ }
+
+
+    .row-menu {
+        background-color: #454545;
+        border-color: #454545;
+             color: #fff;
+                 padding: 40px; 
+    }
+
+
+    .navbar-inverse .navbar-nav>li>a {
+        color: #fff;
+       
+
+    }
+    .navbar-nav>li>a {
+     font-weight: bold;
+}
+
+    .navbar-inverse .navbar-brand {
+        color: #fff;
+    }
+
+    .navbar {
+        border: 0px solid transparent;
+        border-radius: 0px! important;
+        margin-bottom: 0px! important;
+            margin-top: 2px;
+    }
+
+
+    
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+        color: #fff;
+        background-color: #454545; 
+    }
+
+    .nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(28, 138, 121, 1);
+}
+
+
+
+    /* SLIDE */
+   
+.carousel-caption {
+    left: 9%;
+    text-align: left;
+    top:50%;
+}
+   
+
+.carousel {
+    position: relative;
+}
+
+
+
+.texto-slide {
+    font-size: 1.2em;
+        font-weight: bold;
+}
+
+.titulo-slide{
+    font-weight: bold;
+    font-size: 2.8em;
+}
+
+
+
+
+/* NEWSLETTER*/
+    .newsletter{
+    min-height: 37px;
+    color:#fff;
+    }
+
+
+.titulo-news {
+    margin-top: 0px !important;
+}
+
+
+    .row-newsletter{
+        background-color:#148a7b;
+        padding: 77px 0px 77px 0px;
+    }
+
+    
+
+   
+    .form-news{
+        border: 2px solid #fff;   
+        padding:0px; 
+        height: 47px;
+     
+        margin-left: 120px;
+
+    }
+
+    .btn-adress{
+            background-color: rgba(255, 255, 255, 0)! important;
+               color:#fff;
+                  float:left;
+                  padding: 10px;
+    }
+
+    .btn-plus{
+        background-color: rgba(0, 0, 0, 0);
+        color:#485057;
+       float:right;
+                  padding: 0px;
+                  width: 42px;
+                 cursor:pointer;
+    }
+
+    .btn-plus:hover {
+    color: rgba(28, 138, 121, 1) !important;
+}
+
+
+
+       .glyphicon-news{
+            top:5px! important;
+        }
+
+    .input-news {
+    float: left;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+   
+
+    /* EMPRESA */
+    .titulo-empresa{
+        color:#148a7b;
+        padding-bottom: 70px;
+    }
+
+    .texto-empresa{
+        text-align: center;
+        
+    }
+
+    .row-empresa {
+    padding-top: 30px;
+    padding-bottom: 128px;
+    background-color:#f8f8f8;
+}
+
+
+/* CURSOS */    
+.row-cursos{ 
+    background-color:#485057;
+    color:#fff;
+      padding-bottom: 85px;
+      padding-top:30px;
+}
+
+.risco-curso{
+    width:100%;
+    margin:10px;
+    background-color:#fff;
+    height: 1px;
+  
+}
+
+.texto-curso {
+    margin: 15px 0px 30px;
+}
+
+.paineis-cursos{
+    margin-top:30px;
+}
+
+.painel-curso {
+    padding: 25px;
+    margin: 15px;
+}
+.painel-color{
+     background-color: #262c31;
+}
+.painel-color>.btn{
+    background-color: #148a7b;
+      color:#fff;
+} 
+
+.painel-color-green{
+     background-color: #148a7b;
+     
+}
+.painel-color-green>.btn{
+    color:#fff;
+    background-color:#d29c11;
+}
+
+
+/* EXAMES */
+.row-exames{
+    background-color:#262c31;
+    color:#fff;
+}
+.texto-exame{
+    margin-bottom:0px
+}
+
+.col-img-exame{
+    padding:0px! important;
+}
+
+.green-color{
+    color:#148a7b;
+}
+
+.area-itens {
+    margin-top: 8px;
+}
+
+.p-iten {
+    font-size: 1.2em! important;
+}
+.div-btn-exame{
+    position:absolute;
+    bottom:0px;
+    margin-bottom:0px;
+}
+
+img.img-exame{
+    width: 100%! important;
+    height: 630px;
+}
+
+.textos-exames {
+        margin-top: 30px;
+      position:relative;
+}
+
+
+.relative{
+    position:relative;
+}
+
+
+
+ 
+
+/* LAUDOS */
+.row-laudos {
+    background-color: rgba(230, 230, 230, 1);
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 70px;
+}
+ 
+.titulo-laudo{
+    color:rgba(28, 138, 121, 1);
+    margin-bottom: 28px;
+    margin-bottom: 60px;
+}
+
+.texto-laudo{
+    color:rgba(148, 148, 148, 1);
+    line-height: 1.0285 !important;
+    padding-bottom: 100px;
+}
+
+.laudo-centro > .painel-laudos > .btn {
+    background-color: #d29c11;
+}
+
+
+  .col-paineis-laudo {
+    padding-top: 20px;
+    padding-bottom: 60px; 
+    }
+
+
+
+
+.painel-laudos {
+     padding-top: 60px;
+    padding-bottom: 60px;
+      padding-left:5px;
+     padding-right:5px;
+}
+.laudo-centro {
+    background-color: rgba(28, 138, 121, 1);
+    padding-bottom: 100px;
+       padding-top:100px;
+     
+}
+
+.texto-painel-laudo {
+    padding: 20px;
+}
+
+.btn-orange, .btn-orange:hover {
+    background-color: #d29c11 !important;
+}
+
+
+.btn:hover{
+    background-color: #148a7b!important;
+}
+
+
+.laudo-canto {
+    background-color: #262c31;
+    margin-top: 24px;
+    padding-top: 78px;
+    padding-bottom: 78px;
+}
+
+
+.risco-painel-laudo {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(148, 148, 148, 1);
+    margin: 12px 0px 19px 0px;
+}
+
+
+
+/* ORÇAMENTO */
+.row-orcamento {
+    background-color: #148a7b;
+    color: #fff;
+     padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.area-orcamento{
+    color:#fff;
+}
+
+
+/* CONTATO */
+.row-contato {
+    background-color: #485057;
+    color: #fff;
+    padding-bottom: 25px;
+       padding-top:25px;
+}
+
+.div-contato {
+    background-color: #fff;
+    color: #485057;
+    padding: 50px 30px 50px 30px;
+    margin-bottom: 69px;
+    margin-top:25px;
+}
+
+
+
+
+/* SOBRE*/
+.row-sobre {
+    background-color: #262c31;
+    color: #fff;
+     padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.painel-sobre{
+    padding:15px;
+}
+
+.p-pequeno{
+    font-size:11px! important;
+}
+
+/* RODAPE */
+.row-rodape {
+    background-color: #272727;
+    color: #fff;
+     padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+img.icon-footer {
+    width: 40px;
+}
+
+.copyright{
+    margin-top: 30px;
+    padding-bottom: 0px;
+    
+}
+
+.navbar-collapse.in {
+    overflow-y: auto;
+    width: 100%;
+}
+
+
+/* @MEDIA QUERY */
+
+
+@media (max-width: 488px) {
+
+    .laudo-centro{
+        margin-top: 25px;
+    }
+  
+.div-btn-exame{
+    left: -1px;
+}
+
+    img.img-exame{
+    width: 100%! important;
+    height: 400px ! important;
+}
+
+.input-news {
+    float: left;
+    width: 40%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+    .carousel-caption {
+        left: 9%;
+        text-align: left;
+        top:15%! important;
+    }
+        
+
+    .texto-slide {
+        font-size: 0.9em! important;
+    }
+
+.titulo-slide{
+    font-weight: bold;
+    font-size: 1em! important;
+}
+
+}
+
+
+@media (min-width: 768px) {
+
+ .texto-rodape {
+    font-size: 30px !important;
+}
+
+
+      .texto-exame {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.item-texto {
+    font-size: 17px;
+}
+
+    h3,.titulo{
+    font-size: 45px;
+    }
+        .navbar-right {
+            font-size: 35px;
+        }
+
+        .titulo-news {
+    margin-left:70px;
+    text-align: center;
+}
+
+ 
+
+ }
+
+@media (max-width: 768px) {
+
+      
+
+    .texto-exame {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.item-texto {
+    font-size: 17px;
+}
+
+
+    .titulo-news {
+    text-align: center;
+}
+
+.carousel-caption {
+    left: 9%;
+    text-align: left;
+    top:20%! important;
+}
+     
+.texto-slide{
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.titulo-slide{
+    font-size: 1.4em;
+    }
+
+
+    .p-iten {
+    font-size: 1em !important;
+}
+
+
+    .div-logo {
+    width: 100%! important;
+    min-width: 100%! important;
+    }
+
+
+   .navbar {
+    float: right !important;
+    margin-right: 39%! important;
+  
+}
+ 
+
+
+
+  
+  
+    
+  
+    .col-news {
+    margin-top: 0px;
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+
+
+
+
+.col-laudo {
+ margin: -15px !important;
+}
+
+
+
+
+
+
+
+
+
+   .texto-exame {
+    margin-bottom: 0px;
+    font-size: 23px;
+}
+
+.item-texto {
+    font-size: 23px;
+}
+
+body{
+    font-size: 23px;
+}
+
+    .painel-curso {
+       padding: 18% 4%;
+        margin: 9%;
+    }
+
+    .titulo-curso, .titulo-painel-laudo {
+    font-size: 32px;
+    margin: 0px;
+    line-height: 1.0285;
+}
+
+.texto-curso, .texto-painel-laudo {
+    font-size: 20px;
+    
+}
+
+  
+  }
+
+
+@media (max-width: 992px) {
+
+
+
+    .area-itens {
+    margin-top: 8px;
+    margin-bottom: 60px;
+ 
+}
+
+    .item-texto{
+        font-size:14px;
+    }
+
+
+    .form-news {
+        margin-left: 18%;
+    }
+   
+ .carousel-caption {
+    left: 9%;
+    text-align: left;
+    top:35%;
+}
+   .titulo-slide{
+    font-size: 1.6em;
+    }
+  
+     .texto-slide{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+ 
+  
+    .p-iten {
+    font-size: 1em;
+    }
+    
+    .textos-exames{
+    text-align:center;
+    }
+
+ 
+
+     
+
+
+}
+
+@media (min-width: @screen-lg-min) {
+
+
+
+
+
+
+titulo-exame{
+    margin-bottom: 20px;
+}
+ 
+
+
+
+
+    .p-iten {
+    font-size: 1em! important;
+    }
+    
+
+
+
+
+    
+
+    .painel-laudos {
+   
+    padding-top: 90px;
+    padding-bottom: 90px;
+      padding-left:5px;
+     padding-right:5px;
+    }
+
+
+}
+
+
+@media (min-width: 1450px) {
+
+
+/*@media all and (min-width:1450px)*/
+
+
+ 
+ .div-logo{
+        margin-left:30px;
+    
+    }
+
+    
+
+
+}
